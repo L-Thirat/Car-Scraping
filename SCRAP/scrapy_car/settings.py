@@ -1,3 +1,4 @@
+import os
 # -*- coding: utf-8 -*-
 
 # Scrapy settings for scrapy_car project
@@ -13,6 +14,8 @@ BOT_NAME = 'scrapy_car'
 
 SPIDER_MODULES = ['scrapy_car.spiders']
 NEWSPIDER_MODULE = 'scrapy_car.spiders'
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+CSV_FILE_ROOT = "file:///Users/*NAMEOFUSERNAME*/Desktop/api/"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
